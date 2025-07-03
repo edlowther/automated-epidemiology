@@ -1,0 +1,42 @@
+[
+    {
+        "Name": "emergent_behavior_parameter_noise",
+        "Title": "Emergent Computational Behaviors in Neural Networks via Structured Parameter Noise Injection",
+        "Short Hypothesis": "Injecting structured parameter noise into neural network weights during training or inference can induce emergent computational behaviors\u2014such as modularity, novel dynamics, or robustness\u2014that do not arise with conventional noise schemes or deterministic training, revealing new mechanisms for artificial intelligence.",
+        "Related Work": "Previous work on noise in neural networks has primarily focused on input or label noise, or on noise as a regularizer (e.g., dropout, Gaussian noise) to improve robustness and generalization. Some studies in computational neuroscience examine noise in biological networks, and recent work (Giardini et al., 2024) explores emergent collective behaviors in multi-agent systems via network non-linearity, but not through parameter noise. There is a lack of systematic study of emergent behaviors in standard deep learning models driven specifically by structured parameter noise, and no work directly characterizing such emergent phenomena or their computational consequences in this setting.",
+        "Abstract": "Emergent behaviors\u2014such as modularity, robustness, or qualitatively novel dynamics\u2014are hallmarks of complex systems, including biological brains, and are increasingly sought after in artificial intelligence. While noise is known to play a key role in biological computation, the effects of structured parameter noise in artificial neural networks remain largely unexplored. This proposal investigates whether injecting structured parameter noise into the weights of standard neural networks, during either training or inference, can induce emergent computational behaviors that do not arise under conventional training or regularization. We hypothesize that particular regimes or structures of parameter noise (e.g., temporally correlated, spatially localized, or annealed) can lead to spontaneous emergence of modularity, new learning dynamics, or unexpected robustness, and that these effects will be qualitatively distinct from those obtained with input or label noise. We will systematically explore the space of parameter noise schemes and characterize their effects on a suite of deep learning benchmarks, using both quantitative (e.g., generalization gap, modularity metrics, learning trajectory analysis) and qualitative (e.g., visualization of internal representations, dynamical systems analysis) tools. The results will illuminate new mechanisms for engineering emergent capabilities in artificial neural systems, and open a novel research direction at the intersection of complexity science and deep learning.",
+        "Experiments": [
+            "Implement parameter noise injection modules in standard neural network architectures (e.g., MLPs, CNNs). Noise schemes will include: (1) i.i.d. Gaussian noise, (2) temporally correlated noise (Ornstein-Uhlenbeck process), (3) spatially structured noise (local clusters of weights), and (4) annealed noise schedules.",
+            "Train and/or evaluate networks on standard tasks (e.g., CIFAR-10, MNIST, synthetic modular tasks) under each noise regime. Compare to baseline models with no noise, input noise, or dropout.",
+            "Measure emergent properties: (a) modularity of learned representations (e.g., using community detection on weight graphs or representation similarity analysis), (b) generalization performance (train/test gap), (c) learning dynamics (loss landscape, trajectory analysis), and (d) robustness to adversarial and distributional shift.",
+            "Visualize and qualitatively analyze internal representations and activation dynamics to identify emergent qualitative behaviors.",
+            "Conduct ablation to isolate the effects of noise structure and timing (training vs. inference)."
+        ],
+        "Risk Factors and Limitations": [
+            "Emergent behaviors may be subtle, difficult to measure, or not arise in simple experimental settings.",
+            "Parameter noise could simply act as another form of regularization without leading to fundamentally new emergent phenomena.",
+            "Quantifying and characterizing 'emergence' in neural networks is a challenge and may require development of new metrics.",
+            "Findings may be sensitive to architecture or dataset choices, limiting generality."
+        ]
+    },
+    {
+        "Name": "synthetic_modalities_selfsupervision",
+        "Title": "Learning Robust Representations with Artificial Modalities in Self-Supervised Learning",
+        "Short Hypothesis": "Introducing entirely artificial, algorithmically generated modalities as auxiliary channels during self-supervised learning can improve the robustness, generalization, and disentanglement of learned representations, beyond what is possible with standard data augmentation or real modalities alone.",
+        "Related Work": "Existing literature on self-supervised learning with multiple modalities (e.g., Taleb et al., 2019; Montanaro et al., 2021) focuses on leveraging real sensor modalities or generating synthetic data for augmentation or pretraining. Some works use domain translation or pseudo-labels, but always as proxies for real data. No prior work systematically investigates the use of deliberately artificial modalities\u2014channels with no direct real-world analogues\u2014integrated as co-equal modalities in self-supervised objectives, nor studies their effect on learned representations in standard vision or audio tasks.",
+        "Abstract": "Multi-modal self-supervised learning typically leverages real-world sensor data or domain-adapted synthetic images to improve representation learning. We propose a novel direction: the deliberate creation and integration of entirely artificial modalities\u2014algorithmically generated auxiliary channels unrelated to any physical sensor\u2014into self-supervised learning pipelines. Examples include spatial geometric maps, structured noise patterns, or synthetic pseudo-labels, designed to be informative yet independent from the original data. We hypothesize that forcing networks to align, predict, or contrast across these artificial modalities will yield more robust, general, and disentangled representations, compared to conventional augmentation or multi-modal setups. Our experiments on standard image and audio datasets introduce several families of synthetic modalities and incorporate them into contrastive, predictive, and masked modeling frameworks. We evaluate the resulting representations on downstream classification and robustness benchmarks, and analyze their disentanglement and invariance properties. Our approach opens a new avenue for self-supervised learning by demonstrating the surprising utility of 'unreal' data channels, and provides insight into the mechanisms by which cross-modal signals shape representation learning.",
+        "Experiments": [
+            "Design and generate synthetic modalities for standard datasets (e.g., CIFAR-10, ImageNet, SpeechCommands): (a) geometric coordinate maps, (b) random but structured masks, (c) algorithmic pseudo-labels, (d) procedural noise channels.",
+            "Integrate these synthetic modalities as auxiliary channels in self-supervised learning frameworks: (i) contrastive learning (e.g., SimCLR), (ii) masked prediction, (iii) multi-modal alignment.",
+            "Compare learned representations (with and without synthetic modalities) on downstream supervised tasks (classification accuracy), robustness to corruption (ImageNet-C), and transfer learning.",
+            "Analyze disentanglement and invariance properties using established metrics (e.g., DCI, SAP).",
+            "Perform ablation: (1) only synthetic modalities, (2) synthetic + real, (3) real only, (4) standard augmentation only."
+        ],
+        "Risk Factors and Limitations": [
+            "Synthetic modalities may not generalize across datasets or domains.",
+            "Artificial modalities could introduce spurious correlations, leading to shortcuts rather than robust learning.",
+            "The benefit may be marginal compared to strong data augmentation or existing multi-modal setups.",
+            "Requires careful design to ensure synthetic modalities are neither trivial nor overwhelming for the network."
+        ]
+    }
+]

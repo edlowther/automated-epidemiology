@@ -1,0 +1,70 @@
+[
+    {
+        "Name": "nonlinear_lifecourse_birthweight_bmi",
+        "Title": "Uncovering Nonlinear and Age-Dependent Associations Between Birth Weight and BMI Using Machine Learning Trajectory Models",
+        "Short Hypothesis": "The association between birth weight and BMI is nonlinear and varies with age, and modern machine learning trajectory models can reveal patterns and predictive relationships that are missed by traditional linear regression adjusted for sex.",
+        "Related Work": "Prior work has established an inverse relationship between birth weight and adult BMI, often using linear regression adjusted for sex and other covariates (e.g., Rolfe et al. 2010, Kobus et al. 2021). Some studies have explored subgroup effects or additional biological markers, but there remains a gap in applying modern nonlinear machine learning models to capture complex, potentially age-dependent and nonlinear associations over the life course. No prior work has systematically compared the predictive and explanatory power of nonlinear ML models (e.g., random forests, neural nets) with standard linear regression in this context.",
+        "Abstract": "The relationship between birth weight and body mass index (BMI) has significant implications for understanding early-life determinants of adult health. While prior studies have established an inverse association using linear regression adjusted for sex and other covariates, such approaches may oversimplify the relationship by assuming linearity and constant effects across the life course. In this study, we propose to leverage modern machine learning methods\u2014including random forests, gradient boosting, and neural network-based trajectory models\u2014to capture nonlinear and age-dependent associations between birth weight and BMI from childhood into adulthood. We will use longitudinal cohort data, adjusting for sex and other key covariates, to model BMI trajectories as a function of birth weight and investigate whether these models uncover patterns, interactions, or predictive relationships missed by standard linear regression. Model performance will be evaluated using cross-validated R^2 and mean squared error, and feature importance/interaction analyses will be conducted to interpret model findings. Our results will inform whether more flexible models are warranted in epidemiological studies of developmental origins of health and disease, and may reveal novel at-risk subgroups or critical periods where birth weight has the largest impact on BMI.",
+        "Experiments": [
+            "Collect longitudinal cohort data containing birth weight, repeated BMI measurements, sex, and relevant covariates.",
+            "Fit standard linear regression models predicting BMI at various ages from birth weight and sex (with/without interaction terms).",
+            "Fit nonlinear models (random forests, boosted trees, neural networks) to predict BMI trajectories from birth weight, sex, and other covariates.",
+            "Assess the predictive performance of each model via cross-validated R^2 and mean squared error.",
+            "Use model interpretation methods (e.g., partial dependence plots, feature importance, SHAP values) to identify nonlinearities, interactions, and critical periods.",
+            "Conduct subgroup analyses by sex and other demographic variables to identify heterogeneous effects.",
+            "Statistically compare the ability of ML models to recover known and novel associations versus linear models."
+        ],
+        "Risk Factors and Limitations": [
+            "Requires access to sufficiently large and longitudinal cohort data with repeated BMI measurements.",
+            "Interpretability of complex ML models may be limited, though mitigated by use of interpretation tools.",
+            "Observed associations may still be confounded by unmeasured variables; causality cannot be established.",
+            "ML models may overfit if sample size is limited.",
+            "The improvement over linear models may be modest if the true association is close to linear."
+        ]
+    },
+    {
+        "Name": "sibling_fixed_effects_birthweight_bmi",
+        "Title": "How Much Does Family Background Confound the Birth Weight\u2013BMI Association? A Sibling Fixed-Effects Approach",
+        "Short Hypothesis": "The association between birth weight and BMI estimated by standard linear regression (adjusted for sex) is inflated by unmeasured familial confounding, and using sibling fixed-effects regression will yield a substantially attenuated (or altered) estimate.",
+        "Related Work": "Previous studies have used sibling comparison or family fixed-effects models to study birth weight associations with outcomes like mortality, morbidity, obesity (as a binary outcome), and cognition (Class et al. 2014; Kinge 2017; Silventoinen et al. 2023). However, there is a lack of focused research directly comparing the association between birth weight and BMI (as a continuous trait) using standard sex-adjusted linear regression versus sibling fixed-effects linear regression, quantifying the degree of confounding in this specific context.",
+        "Abstract": "Birth weight is commonly associated with body mass index (BMI) later in life, often estimated using linear regression models adjusted for sex and other covariates. However, such models are vulnerable to unmeasured familial confounding, such as genetic or shared environmental factors. We propose a focused investigation that directly compares the association between birth weight and BMI using both standard linear regression (adjusted for sex) and sibling fixed-effects models, which control for all shared familial confounders. Using large-scale cohort data with sibling pairs, we will estimate the effect of birth weight on BMI at multiple ages (childhood, adolescence, adulthood) and quantify the differences in effect size and significance between the two approaches. This head-to-head comparison will provide a simple yet rigorous assessment of the extent to which unmeasured familial confounding inflates or alters the observed association. The study will advance our understanding of the causal relevance of birth weight for BMI and inform the interpretation of previous findings relying on conventional regression models.",
+        "Experiments": [
+            "Obtain large-scale cohort data with birth weight, BMI, sex, and sibling identifiers.",
+            "Estimate the birth weight\u2013BMI association at various ages using standard linear regression, adjusting for sex.",
+            "Estimate the same association using sibling fixed-effects regression, which compares siblings within the same family.",
+            "Compare effect sizes, confidence intervals, and statistical significance between the two models.",
+            "Optionally, stratify analyses by sex or socioeconomic status to assess effect modification.",
+            "Evaluate model fit and robustness with sensitivity analyses (e.g., excluding twins, adjusting for birth order)."
+        ],
+        "Risk Factors and Limitations": [
+            "Requires access to sufficient numbers of sibling pairs with complete data.",
+            "Sibling fixed-effects models cannot account for confounding that varies within families (e.g., birth order, unique environmental exposures).",
+            "Reduced sample size and statistical power in sibling analysis compared to population-level models.",
+            "Results may not generalize to only-child populations or populations with different family structures.",
+            "Causality is still limited by potential within-family confounding and measurement error."
+        ]
+    },
+    {
+        "Name": "epigenetic_moderation_birthweight_bmi",
+        "Title": "Do Epigenetic Signatures at Birth Moderate the Long-Term Association Between Birth Weight and BMI? An Interpretable Machine Learning Approach",
+        "Short Hypothesis": "Epigenetic signatures (e.g., DNA methylation patterns) at birth moderate the strength and direction of the association between birth weight and BMI across childhood and adolescence, such that the predictive value of birth weight for future BMI is conditional on an individual's methylation profile.",
+        "Related Work": "Prior studies have explored the association between specific or genome-wide DNA methylation at birth and later weight outcomes (e.g., Bright et al., 2019; Gonzalez-Nahm et al., 2018; Neumann et al., 2022), generally focusing on main effects. Some have tested variance explained in BMI by methylation, typically finding modest or null effects. However, there is little work investigating whether epigenetic patterns *moderate* the birth weight\u2013BMI association\u2014i.e., whether certain methylation-defined subgroups show stronger or weaker links between birth weight and later BMI. No prior study has systematically modeled interaction effects between birth weight and multiple methylation loci, nor used interpretable ML to reveal such moderators.",
+        "Abstract": "Traditional epidemiological studies have established a modest association between birth weight and body mass index (BMI) in childhood and adolescence, but this relationship is variable and poorly predictive at the individual level. Recent advances in epigenetics suggest that DNA methylation patterns at birth may capture signatures of early-life exposures and potential for metabolic dysregulation, yet most studies have focused on main effects of methylation on BMI or birth weight. Here, we propose a novel investigation into whether multi-locus epigenetic signatures at birth *moderate* the association between birth weight and BMI trajectories through childhood and adolescence. Using longitudinal cohort data with cord blood DNA methylation, birth weight, repeated BMI measurements, and covariates, we will apply interpretable machine learning approaches (e.g., Lasso interaction models, decision trees, and causal forests) to identify methylation-defined subgroups in which birth weight is a stronger or weaker predictor of later BMI. We will model and visualize these interactions, quantify the improvement in predictive accuracy, and interpret the biological relevance of the top moderating loci. This approach will clarify the conditions under which birth weight is a meaningful predictor of later BMI, potentially informing personalized early-life obesity prevention strategies.",
+        "Experiments": [
+            "Obtain longitudinal cohort data with cord blood methylation, birth weight, BMI at multiple ages, and covariates (sex, gestational age, maternal factors).",
+            "Fit baseline linear models predicting BMI from birth weight, adjusting for covariates.",
+            "Fit interaction models (e.g., Lasso regression with birth weight \u00d7 methylation terms) to identify methylation loci that moderate the birth weight\u2013BMI association.",
+            "Apply decision tree or causal forest models to discover methylation-defined subgroups with differential birth weight\u2013BMI associations.",
+            "Evaluate predictive performance (cross-validated R^2, MSE) and statistical significance of interaction effects.",
+            "Interpret top moderating methylation loci using bioinformatics and pathway analysis.",
+            "Visualize BMI trajectories by birth weight and methylation-defined subgroups."
+        ],
+        "Risk Factors and Limitations": [
+            "Requires access to sufficiently large cohort data with genome-wide methylation and repeated BMI measures.",
+            "Epigenetic moderation effects may be small, requiring careful statistical correction for multiple testing.",
+            "Potential for confounding by unmeasured early-life exposures or cell-type composition in methylation data.",
+            "Findings may not generalize across cohorts, ethnicities, or different methylation measurement platforms.",
+            "Interpretability may be limited by the complexity of multi-locus interactions, though use of interpretable ML models mitigates this."
+        ]
+    }
+]
