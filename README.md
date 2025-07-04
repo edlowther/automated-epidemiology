@@ -5,6 +5,12 @@ This repository accompanies the manuscript:
 > **Bann D, Wright L, Kovalchuk J, Lowther E.**  
 > *Why can’t epidemiology be automated (yet)?* (forthcoming, 2025)
 
+---
+
+## Abstract (Draft)
+
+Recent advances in artificial intelligence (AI)—particularly generative AI—presents new opportunities to accelerate or even automate epidemiological research. Compared with disciplines reliant on physical experimentation, secondary data analysis makes Epidemiology well-suited for such augmentation. Yet, it remains unclear which specific tasks are most suitable to AI augmentation or where roadblocks exist; awareness of current AI capabilities is also mixed. Here, we map the landscape of epidemiological tasks using existing datasets—from literature review to data access, analysis, interpretation, and dissemination—and identify where existing AI tools offer efficiency gains. In some domains, such as coding or administrative tasks, acceleration is already achievable. In others, utility is constrained by limitations in current AI models (e.g., hallucinations in literature reviews) or by human systems (e.g., barriers to accessing datasets). Recently developed agentic systems can now design and execute epidemiological analysis. We provide examples of AI-generated epidemiological outputs, including fully AI-generated papers, here. Epidemiologists have new opportunities to empirically test and benchmark their capabilities. Realising the potential of AI will require two-way engagement between epidemiologists and engineers.
+
 It provides examples of AI-generated epidemiological outputs, including:
 
 - **Data-analysis notebooks / scripts**  
