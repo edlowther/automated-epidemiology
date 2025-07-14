@@ -9,7 +9,32 @@ This repository accompanies the manuscript:
 
 ## Abstract (Draft)
 
-Recent advances in artificial intelligence (AI)—particularly generative AI—presents new opportunities to accelerate or even automate epidemiological research. Compared with disciplines reliant on physical experimentation, secondary data analysis makes Epidemiology well-suited for such augmentation. Yet, it remains unclear which specific tasks are most suitable to AI augmentation or where roadblocks exist; awareness of current AI capabilities is also mixed. Here, we map the landscape of epidemiological tasks using existing datasets—from literature review to data access, analysis, interpretation, and dissemination—and identify where existing AI tools offer efficiency gains. In some domains, such as coding or administrative tasks, acceleration is already achievable. In others, utility is constrained by limitations in current AI models (e.g., hallucinations in literature reviews) or by human systems (e.g., barriers to accessing datasets). Recently developed agentic systems can now design and execute epidemiological analysis. We provide examples of AI-generated epidemiological outputs, including fully AI-generated papers, here. Epidemiologists have new opportunities to empirically test and benchmark their capabilities. Realising the potential of AI will require two-way engagement between epidemiologists and engineers.
+Recent advances in artificial intelligence (AI), and particularly generative AI, present new opportunities to accelerate or even automate epidemiological research. 
+
+Compared with disciplines reliant on physical experimentation, secondary data analysis makes epidemiology well-suited for such augmentation. 
+
+Yet, it remains unclear which specific tasks are most suitable to AI augmentation or where roadblocks exist; awareness of current AI capabilities is also mixed. 
+
+We map the landscape of epidemiological tasks - from literature review to data access, analysis, interpretation, and dissemination - and identify where existing AI tools offer efficiency gains. 
+
+In some domains, such as coding or administrative tasks, acceleration is already achievable. 
+
+In others, utility is constrained by limitations in current AI models (e.g., hallucinations in literature reviews) or by human systems (e.g., barriers to accessing datasets). 
+
+Recently developed agentic systems can now design and execute epidemiological analysis. Epidemiologists have new opportunities to empirically test and benchmark their capabilities. 
+
+## Contents
+
+In this repository, we provide examples of AI-generated epidemiological outputs, including fully AI-generated papers. 
+
+Having manually generated a synthetic dataset with some significant relationships between variables and various realistic problems such missing values and outlying or impossible values (e.g. negative heights), we investigate the utility of several open-source tools for specific tasks: 
+
+- Research proposal ideation with [the AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) by [SakanaAI](https://sakana.ai/)
+- Research code creation, execution and interpretation with [Data Analysis Crow](https://github.com/Future-House/data-analysis-crow) by [FutureHouse](https://www.futurehouse.org/)
+
+We also prompted three closed-source "deep research" tools to produce full papers based on the synthetic data. 
+
+
 
 It provides examples of AI-generated epidemiological outputs, including:
 
