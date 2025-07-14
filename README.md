@@ -45,9 +45,9 @@ Building on similar themes as contained in the analysis outlined above, we also 
 
 The AI Scientist-v2 defaults to using OpenAI models on the backend; we stuck with this approach and used the [ideation](https://github.com/SakanaAI/AI-Scientist-v2/blob/main/ai_scientist/perform_ideation_temp_free.py) feature to generate the outputs available at [`outputs/ai-scientist-v2_ideas`](outputs/ai-scientist-v2_ideas). 
 
-### 3. Deep Research
+### 3. Deep Research tools and [`data-to-paper`](https://github.com/Technion-Kishony-lab/data-to-paper)
 
-We also prompted three closed-source tools to produce full papers based on the synthetic data: Claude 4 Opus from Anthropic, GPT o3 from OpenAI, and Gemini 2.5 pro from Google. The results are at [`outputs/deep-research_full-papers`](outputs/deep-research_full-papers). 
+We also prompted three closed-source tools - Claude 4 Opus from Anthropic, GPT o3 from OpenAI, and Gemini 2.5 pro from Google - and the open-source `data-to-paper` tool from the [Kishony Lab](https://kishony.technion.ac.il/) at the Technion-Israel Institute of Technology to produce full papers based on the synthetic data. The results are at [`outputs/full-papers`](outputs/full-papers). 
 
 ### 4. [NotebookLM](https://notebooklm.google/) 
 
