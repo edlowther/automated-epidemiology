@@ -32,9 +32,7 @@ Having manually generated a synthetic dataset with some significant relationship
 - Research proposal ideation with [the AI Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) by [SakanaAI](https://sakana.ai/)
 - Research code creation, execution and interpretation with [Data Analysis Crow](https://github.com/Future-House/data-analysis-crow) by [FutureHouse](https://www.futurehouse.org/)
 
-We also prompted three closed-source "deep research" tools to produce full papers based on the synthetic data. 
-
-
+We also prompted three closed-source "deep research" tools to produce full papers based on the synthetic data, and tasked Google's [NotebookLM](https://notebooklm.google/) tool to convert our draft paper into a podcast. 
 
 It provides examples of AI-generated epidemiological outputs, including:
 
