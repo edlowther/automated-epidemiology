@@ -2,26 +2,18 @@
 
 This repository accompanies the manuscript:
 
-> **Bann D, Wright L, Kovalchuk J, Lowther E.**  
+> **Bann D, Lowther E, Wright L, Kovalchuk J**  
 > *Why can’t epidemiology be automated (yet)?* (forthcoming, 2025)
 
 ---
 
 ## Abstract (Draft)
 
-Recent advances in artificial intelligence (AI), and particularly generative AI, present new opportunities to accelerate or even automate epidemiological research. 
+Recent advances in artificial intelligence (AI)—particularly generative AI—present new opportunities to accelerate, or even automate, epidemiological research. Unlike disciplines based on physical experimentation, a sizable fraction of Epidemiology relies on secondary data analysis and thus is well-suited for such augmentation. Yet, it remains unclear which specific tasks can benefit from AI interventions or where roadblocks exist. 
 
-Compared with disciplines reliant on physical experimentation, secondary data analysis makes epidemiology well-suited for such augmentation. 
+Awareness of current AI capabilities is also mixed. Here, we map the landscape of epidemiological tasks using existing datasets—from literature review to data access, analysis, writing up, and dissemination—and identify where existing AI tools offer efficiency gains. While AI can increase productivity in some areas such as coding and administrative tasks, its utility is constrained by limitations of existing AI models (e.g. hallucinations in literature reviews) and human systems (e.g. barriers to accessing datasets). 
 
-Yet, it remains unclear which specific tasks are most suitable to AI augmentation or where roadblocks exist; awareness of current AI capabilities is also mixed. 
-
-We map the landscape of epidemiological tasks - from literature review to data access, analysis, interpretation, and dissemination - and identify where existing AI tools offer efficiency gains. 
-
-In some domains, such as coding or administrative tasks, acceleration is already achievable. 
-
-In others, utility is constrained by limitations in current AI models (e.g., hallucinations in literature reviews) or by human systems (e.g., barriers to accessing datasets). 
-
-Recently developed agentic systems can now design and execute epidemiological analysis. Epidemiologists have new opportunities to empirically test and benchmark their capabilities. 
+Through examples of AI-generated epidemiological outputs, including fully AI-generated papers, we demonstrate that recently developed agentic systems can now design and execute epidemiological analysis, albeit to varied quality (see https://github.com/edlowther/automated-epidemiology). Epidemiologists have new opportunities to empirically test and benchmark AI systems; realising the potential of AI will require two-way engagement between epidemiologists and engineers. 
 
 ## Contents overview
 
