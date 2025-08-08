@@ -3,7 +3,9 @@
 This repository accompanies the manuscript:
 
 > **Bann D, Lowther E, Wright L, Kovalchuk J**  
-> *Why can’t epidemiology be automated (yet)?* (forthcoming, 2025)
+> *Why can’t epidemiology be automated (yet)?* (Arxriv, 2025)
+>
+> [https://www.arxiv.org/abs/2507.15617](https://www.arxiv.org/abs/2507.15617)
 
 ---
 
