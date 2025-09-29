@@ -39,6 +39,8 @@ Building on similar themes as contained in the analysis outlined above, we also 
 
 The AI Scientist-v2 defaults to using OpenAI models on the backend; we stuck with this approach and used the [ideation](https://github.com/SakanaAI/AI-Scientist-v2/blob/main/ai_scientist/perform_ideation_temp_free.py) feature to generate the outputs available at [`outputs/ai-scientist-v2_ideas`](outputs/ai-scientist-v2_ideas). 
 
+We also attempted to investigate this tool's paper-generation feature however we were not able to overcome a technical problem related to establishing a connection with the OpenAI API. 
+
 ### 3. Deep Research tools and [`data-to-paper`](https://github.com/Technion-Kishony-lab/data-to-paper)
 
 We also prompted three closed-source tools - Claude 4 Opus from Anthropic, GPT o3 from OpenAI, and Gemini 2.5 pro from Google - and the open-source `data-to-paper` tool from the [Kishony Lab](https://kishony.technion.ac.il/) at the Technion-Israel Institute of Technology to produce full papers based on the synthetic data. The results are at [`outputs/full-papers`](outputs/full-papers). 
@@ -46,5 +48,17 @@ We also prompted three closed-source tools - Claude 4 Opus from Anthropic, GPT o
 ### 4. [NotebookLM](https://notebooklm.google/) 
 
 This is a closed-source tool from Google that is capable of summarising information in various ways. We used it to convert our draft paper into a podcast, available at [`outputs/notebook-LM_podcasts`](outputs/notebook-LM_podcasts). 
+
+## Other tools
+
+Many other options are available for applying LLMs to the sorts of tasks described above, with new tools becoming available on a regular basis. The following are two others that we would have liked to try but were unable to:
+
+### 1. [AI co-scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/)
+
+Another tool from Google, released to much fanfare in February 2025, offered a "virtual scientific collaborator to help scientists generate novel hypotheses and research proposals, and to accelerate the clock speed of scientific and biomedical discoveries". Unfortunately it remains in closed Beta and our application to be test users was not approved by the time of writing. 
+
+### 2. [Robin](https://github.com/Future-House/robin)
+
+While not directly aiming to tackle epidemiological research questions, another tool from the team at [FutureHouse](https://www.futurehouse.org/) called Robin generated a great deal of interest at its launch in May 2025, promising to deliver an end-to-end multi-agent system for scientific discovery. Unfortunately we were unable to resolve backend authentication errors that prevented us from experimenting with this further. 
 
 *Questions or issues?* Open an issue in the repo or contact the authors.
