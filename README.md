@@ -53,9 +53,9 @@ This is a closed-source tool from Google that is capable of summarising informat
 
 Many other options are available for applying LLMs to the sorts of tasks described above, with new tools becoming available on a regular basis. The following are two others that we would have liked to try but were unable to:
 
-### 1. Google's [AI co scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/)
+### 1. [AI co scientist](https://research.google/blog/accelerating-scientific-breakthroughs-with-an-ai-co-scientist/)
 
-This is another tool from Google, which was released to much fanfare in February 2025 promising to be a "virtual scientific collaborator to help scientists generate novel hypotheses and research proposals, and to accelerate the clock speed of scientific and biomedical discoveries". Unfortunately it remains in closed Beta and our application to be test users has not been approved at the time of writing. 
+Another tool from Google, released to much fanfare in February 2025, offered a "virtual scientific collaborator to help scientists generate novel hypotheses and research proposals, and to accelerate the clock speed of scientific and biomedical discoveries". Unfortunately it remains in closed Beta and our application to be test users was not approved by the time of writing. 
 
 ### 2. [Robin](https://github.com/Future-House/robin)
 
