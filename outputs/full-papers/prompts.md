@@ -7,3 +7,4 @@
 | **Clarification exchange** | 1. *Assistant*: Asked five follow-up questions about age at BMI measurement, BMI format, visualisations, journal style, and covariates.<br>2. *User*: Provided answers (BMI at age 42; BMI format & covariates “you decide”; visuals yes; IJE style). |
 | **Analysis & write-up completed** | 25 June 2025 (Europe/London timezone) |
 | **Dataset** | `/data/cohort-data.csv` (simulated dataset uploaded by user) |
+| **STROBE checklist** | Note, we additionally include a completed STROBE checklist for the most performant model (OpenAI o3's full paper) - note the n/a for most items due to a lack of context given in the prompt |
